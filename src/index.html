@@ -1,148 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio UI</title>
     <link rel="stylesheet" href="styles/main.css" />
-</head>
+  </head>
 
-<body>
-    <header class="desktop-header">
-        <ul class="header-list">
-          <li><a href="/Works">Works</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="/Contact">Contact</a></li>
+  <body>
+    <header class="header">
+      <nav class="nav__header">
+        <ul class="list__header">
+          <li class="item-list__header">Works</li>
+          <li class="item-list__header">Blog</li>
+          <li class="item-list__header">Contact</li>
         </ul>
-      </header>
-  
-      <div class="Tommy-style">
-        <div class="tommy-left-part">
-          <h1>Hi, I am John, Creative Technologist</h1>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-          <button class="button-tommy">Download Resume</button>
-        </div>
-  
-        <img class="image" src="assets/tommy.svg" alt="Tommy" />
+      </nav>
+    </header>
+    <main class="main">
+      <div class="layout">
+        <section class="hero">
+          <div class="hero__content">
+            <h1 class="hero__content-title">
+              Hi, I am John, Creative Technologist
+            </h1>
+            <p class="hero__content-subtitle">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="hero__content-button">Download Resume</button>
+          </div>
+          <img class="hero__image" src="./assets/tommy.svg" alt="" />
+        </section>
       </div>
-      <div class="second-part">
-        <div class="second-part-left">
-          <div
-            style="font-family: Heebo-Medium; font-size: 22px; margin-top: 20px"
-          >
-            Recent posts
-          </div>
-          <div style="margin-top: 27px">
-            <a href="/View_all" style="text-decoration: none">View all</a>
-          </div>
+      <section class="recent-posts ">
+        <div class="recent-posts__header-container">
+          <h4 class="recent_posts__title">Recent posts</h4>
+          <a href="/" class="recent_posts__view-all-link">View all</a>
         </div>
-        <div class="window-center">
-          <div style="background-color: white; margin-left: 148px">
-            <p style="font-family: Heebo-Medium; font-size: 20px; font-weight: bold">
+        <div class="recent-posts__content-container">
+          <div class="recent-post">
+            <h3 class="recent-post__title">
               Making a design system from scratch
-            </p>
-            <div class="first-window-left">
-              <div>Design, Pattern</div>
-            </div>
-  
-            <p class="window-center-second-part">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint. Velit officia consequat duis enim velit mollit. Exercitation
-              veniam consequat sunt nostrud amet.
+            </h3>
+            <p class="recent-post__tags">Design, Pattern</p>
+            <p class="recent-post__text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
             </p>
           </div>
-          <div class="second-window-right-two">
-            <p  style="font-family: Heebo-Medium; font-size: 20px; font-weight: bold">
+          <div class="recent-post">
+            <h3 class="recent-post__title">
               Creating pixel perfect icons in Figma
-            </p>
-            <div class="second-window-right">
-              <div >Figma, Icon Design</div>
-            </div>
-            <p style="font-family: Heebo-Medium">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint. Velit officia consequat duis enim velit mollit. Exercitation
-              veniam consequat sunt nostrud amet.
+            </h3>
+            <p class="recent-post__tags">Figma, Icon Design</p>
+            <p class="recent-post__text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
             </p>
           </div>
         </div>
-      </div>
-      <div class="Featured">
-        <p class="featured_works_first_text">Featured works</p>
-        <div class="featured-first">
-          <img src="assets/Dashboards.svg" alt="Dashboards" />
-          <div class="featured-first-text">
-            <div class="design">Designing Dashboards</div>
-            <div class="first-2020-dashboard">
-              <div class="first-2020">2020</div>
-              <div class="dashboard">Dashboard</div>
+      </section>
+     <div class="layout">
+        <section class="featured-works">
+          <h4 class="feadtured-works__title">Featured works</h4>
+         <div class="projects-container">
+  <div class="project-container">
+    
+                <img
+                  src="./assets/Dashboards.svg"
+                  alt="image"
+                  class="project-container__img"
+                />
+                <div class="project-container__main-part">
+                  <h2 class="project-container__main-part-title">
+                    Designing Dashboards
+                  </h2>
+                  <div class="project-container__main-part_flex">
+                    <div class="project-container__main-part_flex">
+                      <p class="project-container__main-part-date">2020</p>
+                      <p class="project-container__main-part-tag">Dashboard</p>
+                    </div>
+                  </div>
+                  <p class="project-container__main-part-text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                    amet sint. Velit officia consequat duis enim velit mollit.
+                    Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+              </div>
+  </div>
+  <div class="project-container">
+                <img
+                  src="./assets/Vibrant.svg"
+                  alt="image"
+                  class="project-container__img"
+                />
+                <div class="project-container__main-part">
+                  <h2 class="project-container__main-part-title">
+                    Vibrant Portraits of 2020
+                  </h2>
+                  <div class="project-container__main-part_flex">
+                    <p class="project-container__main-part-date">2018</p>
+                    <p class="project-container__main-part-tag">Illustration</p>
+                  </div>
+                  <p class="project-container__main-part-text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                    amet sint. Velit officia consequat duis enim velit mollit.
+                    Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+              </div>
+              <div class="project-container">
+            <img
+              src="./assets/Malayalam.svg"
+              alt="image"
+              class="project-container__img"
+            />
+            <div class="project-container__main-part">
+              <h2 class="project-container__main-part-title">
+                36 Days of Malayalam type
+              </h2>
+              <div class="project-container__main-part_flex">
+                <p class="project-container__main-part-date">2018</p>
+                <p class="project-container__main-part-tag">Typography</p>
+              </div>
+              <p class="project-container__main-part-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
             </div>
-            <div class="first-text-Amet">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint. Velit officia consequat duis enim velit mollit. Exercitation
-              veniam consequat sunt nostrud amet.
-            </div>
+            <div class="project-container">
           </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__top-part-container">
+          <a href="" class="footer__link"
+            ><img src="./assets/fb.svg" alt="icon" class="footer__icon-link" /></a
+          ><a href="" class="footer__link"
+            ><img
+              src="./assets/insta.svg"
+              alt="icon"
+              class="footer__icon-link" /></a
+          ><a href="" class="footer__link"
+            ><img src="./assets/tw.svg" alt="icon" class="footer__icon-link" /></a
+          ><a href="" class="footer__link"
+            ><img
+              src="./assets/Linkedin.svg"
+              alt="icon"
+              class="footer__icon-link"
+          /></a>
         </div>
-        <div class="line"></div>
-  
-        <div class="featured-second">
-          <img src="assets/Vibrant.svg" alt="Vibrant" />
-          <div class="featured-first-text">
-            <div class="Design">Vibrant Portraits of 2020</div>
-            <div class="first-2020-dashboard">
-              <div class="first-2020">2018</div>
-              <div class="Dashboard">Illustration</div>
-            </div>
-            <div class="first-text-Amet">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint. Velit officia consequat duis enim velit mollit. Exercitation
-              veniam consequat sunt nostrud amet.
-            </div>
-          </div>
+        <div class="footer__bottom-part-container">
+          <p class="footer__copyright">Copyright ©2020 All rights reserved</p>
         </div>
-        <div class="line"></div>
-  
-        <div class="featured-second">
-          <img src="assets/Malayalam.svg" alt="Malayalam" />
-          <div class="featured-first-text">
-            <div class="Design">36 Days of Malayalam type</div>
-            <div class="first-2020-dashboard">
-              <div class="first-2020">2018</div>
-              <div class="Dashboard">Typography</div>
-            </div>
-            <div class="first-text-Amet">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint. Velit officia consequat duis enim velit mollit. Exercitation
-              veniam consequat sunt nostrud amet.
-            </div>
-          </div>
-        </div>
-        <div class="line"></div>
-      </div>
-      <footer>
-        <ul>
-          <li>
-            <a href="/Facebook"><img src="assets/fb.svg" alt="facebook" /></a>
-          </li>
-          <li>
-            <a href="/Instagram"><img src="assets/insta.svg" alt="insta" /></a>
-          </li>
-          <li>
-            <a href="/Twitter"><img src="assets/tw.svg" alt="tw" /></a>
-          </li>
-          <li>
-            <a href="/Linkedin"><img src="assets/Linkedin.svg" alt="in" /></a>
-          </li>
-        </ul>
-        <p>Copyright ©2020 All rights reserved</p>
       </footer>
-</body>
-
+     </div>
+  </body>
 </html>
