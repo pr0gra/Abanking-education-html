@@ -89,11 +89,16 @@ h1 {
   padding: 9px 21px;
   color: #fff;
   font-size: 20px;
+  cursor: pointer;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   font-family: Heebo-Medium;
   background: var(--Primary, #ff6464);
+}
+
+.hero__content-button:hover {
+  background: var(--Primary, #fc7c7c);
 }
 
 .recent-post {
@@ -113,6 +118,10 @@ h1 {
   color: var(--Secondry, #00a8cc);
   cursor: pointer;
   font-size: 16px;
+}
+
+.recent_posts__view-all-link:hover {
+  text-decoration: underline;
 }
 
 .recent-posts {
